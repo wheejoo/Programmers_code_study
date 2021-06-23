@@ -1,10 +1,11 @@
 def solution(l, v):
     v.sort()
     answer = []
-    
+   
+    #시작점
     if 0 not in v:
         answer.append(v[0])
-    
+    #끝점
     if l not in v:
         answer.append(l-v[-1])
         
